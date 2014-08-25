@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="QDD-JO-HA9">
+                                <rect key="frame" x="150" y="158" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                            <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="exP-ey-Fd4">
+                                <rect key="frame" x="85" y="220" width="150" height="2"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </progressView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="280" translatesAutoresizingMaskIntoConstraints="NO" id="8XQ-uI-iQT">
+                                <rect key="frame" x="20" y="236" width="280" height="97"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="8XQ-uI-iQT" secondAttribute="trailing" constant="20" symbolic="YES" id="9rM-WL-yTq"/>
+                            <constraint firstItem="exP-ey-Fd4" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="85" id="Apa-12-fmV"/>
+                            <constraint firstItem="QDD-JO-HA9" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="138" id="EUs-Sl-qxK"/>
+                            <constraint firstItem="8XQ-uI-iQT" firstAttribute="top" secondItem="exP-ey-Fd4" secondAttribute="bottom" constant="14" id="Fx4-tl-txF"/>
+                            <constraint firstItem="exP-ey-Fd4" firstAttribute="centerX" secondItem="8XQ-uI-iQT" secondAttribute="centerX" id="Jr3-YH-f8s"/>
+                            <constraint firstItem="QDD-JO-HA9" firstAttribute="centerX" secondItem="exP-ey-Fd4" secondAttribute="centerX" id="Ufe-Fn-YGQ"/>
+                            <constraint firstItem="exP-ey-Fd4" firstAttribute="top" secondItem="QDD-JO-HA9" secondAttribute="bottom" constant="42" id="tyn-Ze-5Pd"/>
+                            <constraint firstItem="8XQ-uI-iQT" firstAttribute="centerY" secondItem="kh9-bI-dsS" secondAttribute="centerY" id="waW-N9-Gu2"/>
+                            <constraint firstItem="8XQ-uI-iQT" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="x2V-KJ-ISM"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="QDD-JO-HA9" id="cpC-bI-xxR"/>
+                        <outlet property="progressView" destination="exP-ey-Fd4" id="H42-T7-SX4"/>
+                        <outlet property="statusLabel" destination="8XQ-uI-iQT" id="zo7-ac-4tN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
