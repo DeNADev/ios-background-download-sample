@@ -2,6 +2,7 @@ ios-background-download-sample
 ==============================
 
 A sample iOS application to show how to use Background Transfer to download large application data in the background.
+Associated blog post (Japanese only) is available [here](http://developers.mobage.jp/blog/ios-background-download).
 
 This sample is developed using the following:
 - Xcode 5.1.1
